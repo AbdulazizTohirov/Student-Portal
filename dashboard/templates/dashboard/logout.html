@@ -1,0 +1,24 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+{% block content %}
+<style>
+  .ota{
+    width: 230px;
+    height: 200px;
+    background-color:#009ED8;
+    margin: auto;
+    align-items: center;
+
+  }
+</style>
+<div class="border-top pt-3 text-center">
+  <div class="ota">
+
+    <h2>You are logged Out</h2>
+  
+    <small class="text-muted"
+      ><a class="btn btn-danger" href=" {% url 'login' %} ">Log In Again</a>
+    </small>
+  </div>
+</div>
+{% endblock content %}
